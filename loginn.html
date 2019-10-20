@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+ <title>LIFELINE</title>
+
+  <style>
+*{
+    margin:0;
+    outline:none;
+  }
+
+  .header{
+    
+    background-color:#212121; 
+    width:100%;
+    height: 50px;
+  }
+  
+  .content{
+      background-image: url("WallpaperStudio10-69818.jpg");
+      background-color: #cccccc;
+     
+    background-size:cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 88vh;
+  }
+  
+  .signup-box{
+  
+    width: 25%;
+    height: 410px;;
+    background: black;
+
+    margin-top:7.5%;
+    margin-left:35%;
+    text-align: center;
+    opacity: 0.9;
+    border-radius:15px 50px 30px;
+    box-shadow: 0px 0px 30px yellow; 
+     
+  }
+  .signup-box h4{
+    color: #fff;
+    font-size: 18px;
+    padding:3px;
+ 
+  }
+  .signup-box input{
+  
+    color: #fff;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid yellow;
+    width: 90%;
+    text-decoration: none;
+    font-size:15px; 
+    padding:5px;
+
+  
+  }
+  .avtar
+{
+    width: 110px;
+    height: 110px;
+    border-radius: 60%;
+    margin-top:-45px;
+    left: calc(50% - 50px);
+   
+}
+ 
+  
+  .signup-box input[type="submit"]{
+    border-radius: 20px;
+    color: black;
+    padding:10px;
+    margin-top:3%;
+    font-size: 15px;
+    background-color: yellow;
+border:2px solid black;
+    width:70%;
+height:10%;
+  }
+
+  .signup-box input[type="submit"]:hover{
+    background: red;
+    color:black;
+    transform: translate(0px,-2px);
+    border: 1px solid black;
+    font-size: 15px;
+   }
+
+  
+  .signup-box h2{
+    color:yellow;
+    font-size: 32px;
+    padding:32px;
+
+  }
+  .signup-box a{
+    position: relative;
+    color: red;
+    font-size: 15px;
+  }
+.logo img
+{
+position:relative;
+float: left;
+left:-2%;
+top:-1%;
+width:200px;
+height:70px;
+}
+body 
+{
+background-color:#cccccc;
+}
+  @media only screen and (max-width: 768px) {
+    .signup-box{
+      width : 100%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+  }
+  </style>
+    <script>
+                function validateForm() {
+                        var x = document.forms["myForm"]["fname"].value;
+                        if (x == "") {
+                                alert("Please Enter Username");
+                                return false;
+                        }
+                        var y = document.forms["myForm"]["pasw"].value;
+                        if (y == "") {
+                                alert("Please Enter Password");
+                                return false;
+                        }
+                }
+        </script>
+</head>
+
+<body>
+    <div class="main">
+    <div class="header">
+<div class="logo">
+<img src="imageedit_6_4464317344.png">
+</div>
+    </div>
+      <div class="signup-box">
+<!-- <img src="images4.jpg" class="avtar"> -->
+        <img src="images4.jpg" class="avtar">
+        <form name="myForm"  method="post" onsubmit="validateForm()">
+          <h2>Sign-In Here</h2>
+          <h4>Username</h4>
+          <input type="text" name="fname" placeholder="Username"  minlength="8" >
+          <h4>Password</h4>
+          <input type="password" name="pasw" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{7,}" title="Password must contain 1 NUMERIC,1 UPPERCASE LETTER AND A SPECIAL CASE CHARACTER AND LENGTH SHOULD BE MORE THAN 7" >
+          </br>
+          <input type="submit" value="submit"><br>
+          <a href="sup.html"><b>Don't have an account?</b></a>
+        </form>
+      </div>
+ 
+  </body>
+</html>
